@@ -1,0 +1,32 @@
+.descr{
+    max-width: 1070px;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 300;
+    color: #c6c6c6;
+    text-align: justify;
+    text-indent: 50px;
+    justify-self: center;
+    align-self: center;
+    @include resp(1260){
+        font-size: 24px;
+        line-height: 34px;
+    }
+    @include resp(490){
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include resp(330){
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &-first{
+        margin: 0 10px;
+        grid-area: df;
+    }
+    &-second{
+        margin: 0 10px;
+        grid-area: ds;
+        margin-bottom: 90px;
+    }
+}

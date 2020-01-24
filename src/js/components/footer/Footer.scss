@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @include resp(370){
+        height: calc(var(--footer-height) + 40px);
+    }
+    &__copyright{
+        order: -1;
+        font-weight: 300;
+        margin-left: 50px;
+        flex: 1 0 auto;
+    }
+}

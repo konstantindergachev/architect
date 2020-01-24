@@ -1,0 +1,35 @@
+.style__section {
+    position: relative;
+    margin-top: var(--header-height);
+    height: calc(100vh - (var(--footer-height) + var(--header-height)));
+    @include resp(1290){
+        height: 100vh;
+    }
+    @include resp(1260){
+        height: 200vh;
+    }
+    @include resp(880){
+        height: 140vh;
+    }
+    @include resp(490){
+        height: 310vh;
+    }
+    @include resp(330){
+        height: 350vh;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        top: -250px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #ff0000;
+        background: url(./img/house-bcg.jpg) no-repeat;
+        background-size: cover;
+        background-position: top;
+        opacity: 0.15;
+        z-index: -1;
+    }
+}

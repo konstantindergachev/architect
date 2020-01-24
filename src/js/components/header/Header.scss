@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4682b4;
+    position: absolute;
+    z-index: 1000;
+    @include resp(330){
+        height: calc(var(--header-height) - 40px);
+    }
+}

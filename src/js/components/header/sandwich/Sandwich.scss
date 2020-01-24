@@ -1,0 +1,65 @@
+@import '../../../../style/abstracts/mixins';
+
+.sandwich__nav {
+  display: none;
+  @include resp(1060) {
+    position: fixed;
+    right: 0;
+    display: block;
+    margin-right: 90px;
+    width: 40px;
+    transition: left .5s var(--easing);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  @include resp(490) {
+    margin-right: 50px;
+  }
+  @include resp(330) {
+    width: 30px;
+  }
+  .top,
+  .middle,
+  .bottom {
+    @include resp(1060) {
+      height: 3px;
+      background: #feb236;
+      transition: transform .3s var(--easing), opacity .3s;
+    }
+  }
+  .top,
+  .middle {
+    margin-bottom: 10px;
+    @include resp(330) {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.sandwich__nav.sandwich__active {
+  @include resp(1060) {
+    div {
+      background: #feb236;
+    }
+    .top {
+      transform: translateY(12px) rotate(-135deg);
+    }
+    .middle {
+      opacity: 0;
+    }
+    .bottom {
+      transform: translateY(-14px) rotate(-45deg);
+    }
+  }
+}
+.list__active {
+  position: fixed;
+  top: 85px;
+  // left: -182px;
+  right: 0px;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+}

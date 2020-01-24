@@ -1,0 +1,40 @@
+.contact__item{
+    color: #c6c6c6;
+    font-weight: 300;
+    max-width: 500px;
+    justify-self: center;
+    align-self: center;
+    margin-right: 125px;
+    text-decoration: none;
+    @include resp(1300){
+        margin-right: 0;
+    }
+    
+    &-email{
+        grid-area: email;
+        @include resp(760){
+            margin-left: 10px;
+        }
+        @include resp(370){
+            align-self: flex-end;
+        }
+    }
+    &-phone{
+        grid-area: phone;
+        @include resp(370){
+            align-self: flex-end;
+        }
+    }
+    &-skype{
+        grid-area: skype;
+        @include resp(370){
+            align-self: flex-end;
+        }
+    }
+    &-address{
+        grid-area: address;
+        @include resp(370){
+            align-self: flex-end;
+        }
+    }
+}

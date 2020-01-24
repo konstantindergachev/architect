@@ -1,0 +1,11 @@
+.contact__text{
+    grid-area: text;
+    align-self: center;
+    color: #c3c3c3;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+    @include resp(860){
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,46 @@
+.main__text{
+    &-descr{
+        z-index: 1;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        max-width: 500px;
+        width: 100%;
+        margin-top: 300px;
+        margin-right: 110px;
+        display: block;
+        @include resp(1290){
+            margin: 0;
+            position: absolute;
+            top: 80%;
+            left: 20%;
+            transform: translate(-20%, -80%);
+            text-align: justify;
+        }
+        @include resp(1260){
+            top: 77%;
+            left: 30%;
+            transform: translate(-30%, -77%);
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+        @include resp(760){
+            margin: 0;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            text-align: center;
+        }
+        @include resp(490){
+            max-width: 400px;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

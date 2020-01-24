@@ -1,0 +1,84 @@
+.architect__icons {
+    justify-content: space-around;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+    ". title ."
+    "min ray bio"
+    "hig ava dec";
+    
+    @include resp(1260){
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas:
+        "title title "
+        "bio dec"
+        "min ray"
+        "hig ava";
+    }
+    @include resp(880){
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas:
+        "title title"
+        "ray ray"
+        "ava ava"
+        "min min"
+        "hig hig"
+        "dec bio";
+    }
+    @include resp(490){
+        grid-template-rows: repeat(7, auto);
+        grid-template-columns: repeat(1, auto);
+        grid-template-areas:
+        "title"
+        "ray"
+        "ava"
+        "min"
+        "hig"
+        "dec"
+        "bio";
+    }
+
+    &-item {
+        margin: auto;
+        cursor: pointer;
+        transition: all .3s ease-out;
+        @include resp(490){
+            width: 360px;
+        }
+        &:hover {
+            outline: 24px solid #797da0;
+            transform: scale(1.2) translateY(-8px);
+            z-index: 20;
+            @include resp(1260){
+                transform: scale(1.1) translateY(-8px);
+            }
+            @include resp(880){
+                transform: scale(1) translateY(0);
+            }
+        }
+    }
+}
+
+.item-ava{
+    grid-area: ava;
+}
+
+.item-ray{
+    grid-area: ray;
+}
+.item-bio{
+    grid-area: bio;
+}
+.item-hig{
+    grid-area: hig;
+}
+.item-min{
+    grid-area: min;
+}
+.item-dec{
+    grid-area: dec;
+}

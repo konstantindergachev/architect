@@ -1,0 +1,68 @@
+@import '../../../style/abstracts/mixins';
+
+.about__section {
+  position: relative;
+  padding-bottom: 60px;
+  &::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .98);
+    z-index: -1;
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // background: url(./img/about-bcg.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.05;
+    z-index: -1;
+  }
+  &-container {
+    margin-top: 85px;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "q q q" "df df df" "ds ds ds" "z n s" "az an as";
+    @include resp(1030) {
+      grid-template-rows: repeat(8, auto);
+      grid-template-columns: 1fr;
+      grid-template-areas: "q" "df" "ds" "n" "an" "z" "az" "s" "as";
+    }
+  }
+  &-svg {
+    grid-area: q;
+    justify-self: center;
+    align-self: center;
+    width: 58px;
+    height: 58px;
+    margin: 20px 0;
+    z-index: 100;
+  }
+  &-icon {
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    // margin: 0 10px;
+    margin-bottom: 50px;
+    @include resp(1260) {
+      max-width: 300px;
+    }
+    @include resp(490) {
+      max-width: 250px;
+    }
+    @include resp(330) {
+      max-width: 200px;
+    }
+  }
+}

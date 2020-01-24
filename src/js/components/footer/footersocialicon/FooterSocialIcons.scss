@@ -1,0 +1,26 @@
+.footer__svg{
+    width: 24px;
+    height: 24px;
+}
+.footer__img{
+    transition: all .3s ease-out;
+    fill:#c6c6c6;
+    &:hover{
+        fill: rgba(#c6c6c6, .2);
+    }
+}
+.footer__icon{
+    margin-left: 10px;
+}
+.footer__icon-facebook{
+    flex: 0 1 4.5%;
+    @include resp(1290){
+        flex: 0 1 6.5%;
+    }
+    @include resp(1030){
+        flex: 0 1 8%;
+    }
+    @include resp(490){
+        flex: 0 1 20%;
+    }
+}

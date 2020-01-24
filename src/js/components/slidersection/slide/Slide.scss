@@ -1,0 +1,39 @@
+.slide{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+        max-width: 300px;
+        @include resp(1290){
+            max-width: 250px;
+        }
+        @include resp(1260){
+            max-width: 180px;
+        }
+        @include resp(860){
+            max-width: 400px;
+        }
+        @include resp(490){
+            max-width: 180px;
+        }
+    }
+    &__descr{
+        margin-top: 30px;
+        color: #3a3a3a;
+        font-size: 28px;
+        text-align: center;
+        @include resp(1290){
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        @include resp(1260){
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        @include resp(490){
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+}

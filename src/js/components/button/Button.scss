@@ -1,0 +1,46 @@
+.button__main {
+    display: inline-block;
+    border: none;
+    padding: 15px 30px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 24px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 0, .7);
+    color: #ffffff;
+    margin: 50px 130px 0 0;
+    z-index: 1;
+    transition: all .3s ease-out;
+    @include resp(1290){
+        margin: 0;
+        position: absolute;
+        top: 77%;
+        left: 80%;
+        transform: translate(-80%, -77%);
+    }
+    @include resp(1260){
+        padding: 5px 15px;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 5px;
+    }
+    @include resp(780){
+        margin: 0;
+        position: absolute;
+        top: 90%;
+        left: 30%;
+        transform: translate(-30%, -90%);
+    }
+    @include resp(490){
+        padding: 7px 15px;
+        font-size: 16px;
+        line-height: 20px;
+        top: 90%;
+        left: 33%;
+        transform: translate(-33%, -90%);
+    }
+}

@@ -1,0 +1,18 @@
+.icon{
+    &-zaha_hadid{
+        grid-area: z;
+        @include resp(1030){
+            margin-top: 50px;
+        }
+    }
+    &-norman_foster{
+        grid-area: n;
+        transform: scale(1.2);
+    }
+    &-santiago_calatrava{
+        grid-area: s;
+        @include resp(1030){
+            margin-top: 50px;
+        }
+    }
+}

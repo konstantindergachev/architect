@@ -1,0 +1,27 @@
+// @import url('https://fonts.googleapis.com/css?family=Orbitron');
+// @import "./style/libraries/font-awesome/font-awesome";
+@import "./style/abstracts/_animation";
+@import "./style/abstracts/_mixins";
+@import "./style/abstracts/_variables";
+
+@import "./js/App.scss";
+@import "./js/components/button/Button.scss";
+@import "./js/components/header/Header.scss";
+@import "./js/components/menu/Menu.scss";
+@import "./js/components/logo/Logo.scss";
+@import "./js/components/header/sandwich/Sandwich.scss";
+@import "./js/components/mainsection/MainSection.scss";
+@import "./js/components/mainsection/maintext/MainText.scss";
+@import "./js/components/stylesection/StyleSection.scss";
+@import "./js/components/stylesection/styleicons/ArchitectIcon.scss";
+@import "./js/components/slidersection/SliderSection.scss";
+@import "./js/components/slidersection/slide/Slide.scss";
+@import "./js/components/aboutsection/AboutSection.scss";
+@import "./js/components/aboutsection/abouticons/AboutIcons.scss";
+@import "./js/components/aboutsection/text/Text.scss";
+@import "./js/components/aboutsection/aboutarticle/AboutArticle.scss";
+@import "./js/components/contact/Contact.scss";
+@import "./js/components/contact/contacttext/ContactText.scss";
+@import "./js/components/contact/contactitem/ContactItem.scss";
+@import "./js/components/footer/Footer.scss";
+@import "./js/components/footer/footersocialicon/FooterSocialIcons.scss";

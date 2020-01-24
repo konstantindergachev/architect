@@ -1,0 +1,32 @@
+.article {
+  color: #c6c6c6;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 500px;
+  text-indent: 25px;
+  text-align: justify;
+  justify-self: center;
+  align-self: center;
+  margin: 0 10px;
+  @include resp(1030) {
+    max-width: 100%;
+  }
+  @include resp(490) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  @include resp(330) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__first {
+    grid-area: az;
+  }
+  &__second {
+    grid-area: an;
+  }
+  &__third {
+    grid-area: as;
+  }
+}
